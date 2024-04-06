@@ -29,3 +29,7 @@ terraform {
   subnet_id = module.vpc.public_subnet_id
   security_group = module.web_server_sg.security_group_id
 }
+
+ module "s3" {
+  source = "./modules/s3/"
+}
