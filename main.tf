@@ -33,3 +33,7 @@ terraform {
  module "s3" {
   source = "./modules/s3/"
 }
+
+ module "amplify_app" {
+  source = "./modules/amplify/"
+}
